@@ -1,19 +1,19 @@
 <template>
   <v-app>
-   <v-toolbar class="grey darken-3" dark>
+  	<v-toolbar class="grey darken-3" dark v-if="logado">
   		<v-toolbar-side-icon 
   			@click.stop="drawer = !drawer"
   			color="white--text"
   		></v-toolbar-side-icon>
   		<v-spacer></v-spacer>
   		<v-toolbar-items>
-	      <v-btn flat>Usuario</v-btn>
+	      <v-btn flat>Marcelo</v-btn>
 	    </v-toolbar-items>
   	</v-toolbar>
   	<v-navigation-drawer 
 		class="grey darken-3"
 		dark
-		absolute
+		fixed
   		v-model="drawer"
   	>
   		<v-toolbar 
@@ -21,7 +21,7 @@
   		>
   			<v-list>
   				<v-list-tile-title class="ml-3">
-  					DMW
+  					Barbearia
   				</v-list-tile-title>
   			</v-list>
   		</v-toolbar>
@@ -61,14 +61,21 @@
   			</v-list-tile>
   		</v-list>
   	</v-navigation-drawer>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
   </v-app>
 </template>
 <script>
   export default {
     data () {
       return {
-        drawer: false
+				drawer: false,
+				logado: true
       }
     }
   }
 </script>
+<style>
+
+</style>

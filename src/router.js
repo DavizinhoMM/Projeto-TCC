@@ -4,6 +4,7 @@ import Login from './views/login.vue'
 import cliente from './views/cliente.vue'
 import Funcionario from './views/Funcionario.vue' 
 import Home from './views/Home.vue' 
+import Demo from './views/Demo.vue' 
 
 
 Vue.use(Router)
@@ -32,6 +33,11 @@ export default new Router({
       path: '/Home',
       name: 'Pagina de Inicio ',
       component: Home
+    },
+    {
+      path: '/Demo',
+      name: 'Pagina de Demo ',
+      component: Demo
     }
 
   ]

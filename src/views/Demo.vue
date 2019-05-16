@@ -37,6 +37,7 @@
     </v-layout>
 </template>
 <script>
+     import LoginService from'../service/LoginService.js'
     export default{
         data(){
             return{
@@ -49,14 +50,14 @@
         },
         methods:{
             realizarLogin(){
-                
-                if(this.email == "terenciani@outlook.com" && this.senha=='123'){
-                    this.mensagem = "Login ok"
-                    this.cor = "success"
-                    this.alert = true
+               let retorno = LoginService.logar(this.email, this.senha)
+                if(retorno == true){
+                    this.cor    ="success"
+                    this.mensagem = "Login altorizado!"
+                    this.alert  = true
                 }else{
-                    this.mensagem = "Não esta autorizado"
                     this.cor = "error"
+                    this.mensagem = "Não esta autorizado"
                     this.alert = true
                 }
             }
@@ -66,6 +67,5 @@
 <style>
     .layout{
         background-image: url('https://s.profissionaisti.com.br/wp-content/uploads/2018/11/seguranca-dados-dois-fatores-2FA-autenticacao.jpg');
-        
     }
 </style>

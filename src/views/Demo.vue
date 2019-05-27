@@ -13,7 +13,7 @@
             
             <v-card>
                 <v-img
-                    src="https://s.profissionaisti.com.br/wp-content/uploads/2018/11/seguranca-dados-dois-fatores-2FA-autenticacao.jpg"
+                    src="http://www.dwl.fi/wp-content/uploads/2015/05/cropped-dwl_logo.png"
                     aspect-ratio="2.75"
                 >              
                 </v-img>
@@ -66,6 +66,10 @@
 </script>
 <style>
     .layout{
-        background-image: url('https://s.profissionaisti.com.br/wp-content/uploads/2018/11/seguranca-dados-dois-fatores-2FA-autenticacao.jpg');
+        background-image: url('https://blog.meuqua');
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding:0;
     }
 </style>

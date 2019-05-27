@@ -4,7 +4,8 @@ import Login from './views/login.vue'
 import cliente from './views/cliente.vue'
 import Funcionario from './views/Funcionario.vue' 
 import Home from './views/Home.vue' 
-import Demo from './views/Demo.vue' 
+import Demo from './views/Demo.vue'
+import cadastro from './views/cadastro.vue' 
 
 
 Vue.use(Router)
@@ -22,8 +23,7 @@ export default new Router({
       path: '/cliente',
       name: 'Pagina do cliente ',
       component: cliente
-    }
-    ,
+    },
     {
       path: '/funcionario',
       name: 'Pagina do funcionairo ',
@@ -38,6 +38,11 @@ export default new Router({
       path: '/Demo',
       name: 'Pagina de Demo ',
       component: Demo
+    },
+    {
+      path: '/cadastro',
+      name: 'Pagina de Cadastro ',
+      component: cadastro
     }
 
   ]

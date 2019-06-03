@@ -6,6 +6,7 @@ import Funcionario from './views/Funcionario.vue'
 import Home from './views/Home.vue' 
 import Demo from './views/Demo.vue'
 import cadastro from './views/cadastro.vue' 
+import produtos from './views/produtos.vue' 
 
 
 Vue.use(Router)
@@ -43,6 +44,12 @@ export default new Router({
       path: '/cadastro',
       name: 'Pagina de Cadastro ',
       component: cadastro
+    },
+    {
+      path: '/produtos',
+      name: 'Pagina de Produtos ',
+      component: produtos
+
     }
 
   ]

@@ -1,67 +1,61 @@
 <template>
-  <v-layout row justify-center>
-    <v-dialog v-model="dialog" persistent max-width="600px">
-      <template v-slot:activator="{ on }">
-        <v-btn color="primary" dark v-on="on">Open Dialog</v-btn>
-      </template>
-      <v-card>
-        <v-card-title>
-          <span class="headline">User Profile</span>
-        </v-card-title>
-        <v-card-text>
-          <v-container grid-list-md>
-            <v-layout wrap>
-              <v-flex xs12 sm6 md4>
-                <v-text-field label="Primeiro nome" required></v-text-field>
-              </v-flex>
-              <v-flex xs12 sm6 md4>
-                <v-text-field label="Nome do Meio" hint="exemplo de texto auxiliar persistente"></v-text-field>
-              </v-flex>
-              <v-flex xs12 sm6 md4>
-                <v-text-field
-                  label="Sobrenome"
-                  hint="exemplo de texto auxiliar persistente"
-                  persistent-hint
-                  required
-                ></v-text-field>
-              </v-flex>
-              <v-flex xs12>
-                <v-text-field label="Email*" required></v-text-field>
-              </v-flex>
-              <v-flex xs12>
-                <v-text-field label="Password*" type="password" required></v-text-field>
-              </v-flex>
-              <v-flex xs12 sm6>
-                <v-select
-                  :items="['0-17', '18-29', '30-54', '54+']"
-                  label="Age*"
-                  required
-                ></v-select>
-              </v-flex>
-              <v-flex xs12 sm6>
-                <v-autocomplete
-                  :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
-                  label="Interests"
-                  multiple
-                ></v-autocomplete>
-              </v-flex>
-            </v-layout>
-          </v-container>
-          <small>*indicates required field</small>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" flat @click="dialog = false">Close</v-btn>
-          <v-btn color="blue darken-1" flat @click="dialog = false">Save</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+<v-container id="fundo" fluid fill-height>
+  <v-layout justify-center wrap >
+    <v-flex xs12>
+      <v-layout justify-center>
+        <v-img max-width="200px" :src="require('@/assets/DWL.png')" alt="" />
+      </v-layout>
+    </v-flex>
+    <v-flex xs6 width="500px" class="elevation-0" id="fundo2">
+      <h1 class="text-xs-center font-weight-black font-italic" width="100%">Cadastrar-se</h1>
+      <v-card-text>
+        <v-container grid-list-md>
+          <v-layout wrap>
+            <v-flex xs12 sm6 md12>
+              <v-text-field class="font-weight-black font-italic" label="Nome de usuario*" required></v-text-field>
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field class="font-weight-black font-italic" label="E-mail*" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field class="font-weight-black font-italic" label="Senha*" type="Senha" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field class="font-weight-black font-italic" label="Confirme sua senha*" type="Senha" required></v-text-field>
+            </v-flex>
+            <v-flex xs12 sm6>
+
+            </v-flex>
+            <v-flex xs12 sm6>
+          
+            </v-flex>
+          </v-layout>
+        </v-container>
+        
+        <small class="font-weight-black font-italic">*campo Obrigatório</small>
+      </v-card-text>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+
+        <v-btn color="blue darken-1" flat @click="dialog = false">continuar</v-btn>
+      </v-card-actions>
+    </v-flex>
+
   </v-layout>
+</v-container>
 </template>
-<script>
-  export default {
-    data: () => ({
-      dialog: false
-    })
-  }
-</script>
+<style>
+  #fundo{
+    background-image: url('~@/assets/skate.jpg');
+    background-size:cover;
+    opacity: 0,1;
+}
+#fundo2{
+background-color:#aba89970;
+
+}
+
+</style>

@@ -5,7 +5,7 @@ import cliente from './views/cliente.vue'
 import Funcionario from './views/Funcionario.vue' 
 import Home from './views/Home.vue' 
 import Demo from './views/Demo.vue'
-import cadastro from './views/cadastro.vue' 
+import cadastro from './views/Cadastro.vue' 
 import produtos from './views/produtos.vue' 
 import tabela from './views/tabela.vue' 
 

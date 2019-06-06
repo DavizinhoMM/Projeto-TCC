@@ -7,6 +7,7 @@ import Home from './views/Home.vue'
 import Demo from './views/Demo.vue'
 import cadastro from './views/cadastro.vue' 
 import produtos from './views/produtos.vue' 
+import tabela from './views/tabela.vue' 
 
 
 Vue.use(Router)
@@ -50,6 +51,11 @@ export default new Router({
       name: 'Pagina de Produtos ',
       component: produtos
 
+    },
+    {
+      path: '/tabela',
+      name: 'Pagina de tabela ',
+      component: tabela
     }
 
   ]

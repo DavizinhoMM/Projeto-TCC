@@ -1,4 +1,13 @@
 <template>
+    <div class="text-xs-center">
+       <v-list-tile to="/tabela">
+  				<v-list-tile-action>
+		        	<v-icon>build</v-icon>
+		        </v-list-tile-action>
+		        <v-list-tile-content>
+		          	<v-list-tile-title>Pagina de Tabela</v-list-tile-title>
+		        </v-list-tile-content>
+  			</v-list-tile>
     <v-layout justify-center align-center fill-height wrap>
         <v-flex xs12>
             <v-alert
@@ -35,6 +44,7 @@
             </v-card>
         </v-flex>
     </v-layout>
+    </div>
 </template>
 <script>
     export default{

@@ -73,7 +73,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .layout{
         background-image: url('https://s.profissionaisti.com.br/wp-content/uploads/2018/11/seguranca-dados-dois-fatores-2FA-autenticacao.jpg');
         
